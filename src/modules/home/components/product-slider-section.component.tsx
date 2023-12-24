@@ -31,7 +31,7 @@ const ProductSliderItem = ({ productDetails }: { productDetails: Product }) => {
 
 const ProductSlider = ({ products }: { products: Product[] }) => {
    return (
-      <div className={styles["product-slider"]}>
+      <section className={styles["product-slider"]}>
          <Carousel slidesPerView={9}>
             {products.map((product) => (
                <CarouselItem key={product.id}>
@@ -39,7 +39,7 @@ const ProductSlider = ({ products }: { products: Product[] }) => {
                </CarouselItem>
             ))}
          </Carousel>
-      </div>
+      </section>
    );
 };
 
@@ -50,15 +50,22 @@ export const ProductSliderSection = (props: Props) => {
 
    return (
       <>
-         <h1>
-            <span className={styles["main-title"]}>
-               {t("home.products_slider.main_title")}
-            </span>
-            <span className={styles["sub-title"]}>
-               {t("home.products_slider.sub_title")}
-            </span>
-         </h1>
-         <p>{t("home.products_slider.description")}</p>
+         <section className={styles["title-box"]}>
+            <span className={styles["title-image"]} />
+            <div>
+               <h1>
+                  <span className={styles["main-title"]}>
+                     {t("home.products_slider.main_title")}
+                  </span>
+                  <span className={styles["sub-title"]}>
+                     {t("home.products_slider.sub_title")}
+                  </span>
+               </h1>
+
+               <p>{t("home.products_slider.description")}</p>
+            </div>
+         </section>
+
          <ProductSlider products={items} />
       </>
    );
