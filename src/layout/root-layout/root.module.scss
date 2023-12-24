@@ -1,0 +1,11 @@
+.header {
+   @include flex();
+   padding: var(--space-200) 0;
+   gap: var(--space-50);
+}
+
+.container {
+   max-width: 1360px;
+   padding: 0 var(--space-150);
+   margin: auto;
+}

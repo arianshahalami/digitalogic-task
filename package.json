@@ -1,24 +1,40 @@
 {
-  "name": "digitallogic-task",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.0.4"
-  },
-  "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.4"
-  }
+   "name": "digitallogic-task",
+   "version": "0.1.0",
+   "private": true,
+   "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
+   },
+   "dependencies": {
+      "@t3-oss/env-nextjs": "^0.7.1",
+      "axios": "^1.6.2",
+      "i18next": "^23.7.11",
+      "next": "14.0.4",
+      "next-i18next": "^15.1.1",
+      "react": "^18",
+      "react-dom": "^18",
+      "react-i18next": "^14.0.0",
+      "react-query": "^3.39.3",
+      "zod": "^3.22.4"
+   },
+   "devDependencies": {
+      "@types/node": "^20",
+      "@types/react": "^18",
+      "@types/react-dom": "^18",
+      "@typescript-eslint/eslint-plugin": ">=6.0.0",
+      "@typescript-eslint/parser": ">=6.0.0",
+      "eslint": "^8.56.0",
+      "eslint-config-next": "14.0.4",
+      "eslint-config-prettier": "^9.1.0",
+      "eslint-config-xo": "^0.43.1",
+      "eslint-config-xo-typescript": "^1.0.1",
+      "eslint-plugin-prettier": "^5.1.1",
+      "eslint-plugin-react": "^7.33.2",
+      "prettier": "^3.1.1",
+      "sass": "^1.69.5",
+      "typescript": "^5.3.3"
+   }
 }

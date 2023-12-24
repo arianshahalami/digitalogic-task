@@ -1,0 +1,5 @@
+$body-bg-dark: map-get($gray, "600");
+$body-color-dark: $white;
+
+$card-bg-dark: map-get($gray, "500");
+$card-color-dark: $body-color-dark;

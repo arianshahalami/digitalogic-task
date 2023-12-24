@@ -1,0 +1,15 @@
+@mixin dark-mode() {
+   html {
+      &[data-theme="dark"] {
+         @content;
+      }
+   }
+}
+
+@mixin light-mode() {
+   html {
+      &[data-theme="light"] {
+         @content;
+      }
+   }
+}

@@ -1,0 +1,21 @@
+.card {
+   @include flex(column, flex-start, center);
+   background-color: var(--card-bg);
+   border-radius: var(--radius-16);
+   height: 100%;
+   position: relative;
+
+   .card-body {
+      @include flex(column, center, center);
+      flex-grow: 1;
+      width: 100%;
+      padding: 0.5rem;
+      text-align: center;
+   }
+}
+
+@include light-mode {
+   .card {
+      box-shadow: 0 4px 40px 0 #bed6ff36;
+   }
+}
